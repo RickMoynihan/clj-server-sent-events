@@ -1,10 +1,9 @@
-# sse
+# Server Sent Events in Clojure
 
-FIXME: write description
+A simple example of server sent events in Clojure.
 
 ## Usage
 
-FIXME: write
 
 ## License
 

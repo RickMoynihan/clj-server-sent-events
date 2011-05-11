@@ -28,8 +28,7 @@
 
 
 
-(server)
-(def server (start-http-server (wrap-ring-handler #'app) {:port 8080} ))
+(defonce server (start-http-server (wrap-ring-handler #'app) {:port 8080} ))
 
 
 (comment

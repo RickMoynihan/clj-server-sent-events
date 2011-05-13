@@ -26,15 +26,6 @@
       (wrap-file "./files")
       (wrap-resource "./resources")))
 
-
-
 (defonce server (start-http-server (wrap-ring-handler #'app) {:port 8080} ))
 
-
-(comment
-  (defn stream-numbers [ch]
-    (future
-      (dotimes [i 10]
-        (enqueue ch (str "data: " i "\n\n")))
-      (enqueue-and-close ch nil))))
 

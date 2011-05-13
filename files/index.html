@@ -1,7 +1,12 @@
 <html>
   <head>
   </head>
-<body>
+<!-- 
+   To prevent the infinite spinner (page not completing) with the
+   use of the EventSource API you should call it after the page has
+   loaded, with a setTimeout.
+-->
+<body onload="setTimeout(attachEventSource,40)">
 
   <h1>Server sent events example</h1>
   <p>Run the server, by evaluating the sse.core namespace and visit
